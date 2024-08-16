@@ -1,0 +1,200 @@
+body {background-color: gray;}
+.page {
+    background-color: white;
+    max-width: 1200px;
+    min-height: 710px;
+    margin: 0 auto;
+    padding: 32px 32px 0px;
+}
+.trade {
+background-image: url(../IMAGE.png);
+background-size: 524px 414px;
+background-repeat: no-repeat;
+background-position: top 57px left 540px;
+min-height: 700px;
+}
+
+.title {
+    max-width: 510px;
+}
+.title h2 {
+    color: rgb(24, 24, 27);
+font-family: 'Lexend';
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+.title h3 {
+    color: rgb(24, 24, 27);
+font-family: 'Lexend';
+font-size: 40px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0.1px;
+text-align: left;
+}
+.content {
+    max-width: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.content__box {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 245px;
+    gap: 18px;
+}
+.content__text {
+color: rgb(39, 39, 42);
+font-family: 'Lexend';
+font-size: 15px;
+font-weight: bold;
+line-height: 24px;
+letter-spacing: 0.2px;
+text-align: left;
+}
+.content__box p:first-of-type:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+img {
+    width: 32px;
+    height: 32px;
+}
+.row1:has(.simple:hover) {
+    src: url(../ico/Frame1.svg);
+}
+@keyframes row {
+    100% {
+        transform: translateY(5px);
+        fill: red;
+    }
+
+}
+@keyframes row1 {
+    100% {
+        transform: translateY(-5px);
+        fill: red;
+    }
+}
+
+@keyframes rows-rotate {
+    100% {transform: rotate(90deg);}
+}
+.simple_hover:hover #Vector1 {
+    animation: row 1s infinite;
+}
+.simple_hover:hover #Vector2 {
+    animation: row1 1s infinite;
+}
+.simple_hover:hover .rows {
+    animation: rows-rotate 1s both;
+  
+    transition: 2s;
+}
+.advanced:hover .ad2 {
+    animation: ad1 1s infinite linear;
+    fill: red;
+}
+.advanced:hover .ad1 {
+    animation: ad2 1s infinite linear;
+    fill: green;
+    
+}
+
+@keyframes ad1 {
+    25% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+}
+}
+@keyframes ad2 {
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+}
+}
+
+
+.portfolio:hover .port2 {
+    animation: port2 1s linear both; 
+}
+
+
+.portfolio:hover .svg__port {
+    animation: port 5s infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes port2 {
+    100% {
+        transform: translate(-5px, 5px);
+        fill: blue;
+    }
+}
+
+
+@keyframes port {
+    100% {
+        transform: rotate(9000deg);
+    } 
+}
+
+@keyframes point {
+    100% {
+        transform: translateY(-10px);
+        
+    }
+}
+
+@keyframes mobile {
+    20% {
+        translate: 2px -2px;
+        
+    }
+    30% {
+        rotate: 5deg;
+    }
+    40% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        translate: -2px -2px;
+    }
+    60% {
+        rotate: -5deg;
+    }
+}
+.mobile_box:hover .svg_mobile {
+    animation: mobile 1s linear infinite;
+    animation-delay: 0.5s;
+}
+.mobile_box:hover .mobile_point {
+    animation: point 0.5s linear infinite ;
+    animation-direction: alternate-reverse;
+}
+.mobile_box:hover .mobile {
+    animation: mobile 0.5s linear infinite;
+}

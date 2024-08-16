@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Lexent';
+    src: url(../fonts/Lexend-VariableFont_wght.woff2) format('woff2'),
+     url(../fonts/Lexend-VariableFont_wght.woff) format('woff'),
+     url(../fonts/Lexend-VariableFont_wght.ttf) format('truetype');
+     font-display: swap;
+}
