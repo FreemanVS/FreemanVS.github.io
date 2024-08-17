@@ -1,3 +1,4 @@
+
 body {background-color: gray;}
 .page {
     background-color: white;
@@ -86,22 +87,22 @@ img {
 @keyframes rows-rotate {
     100% {transform: rotate(90deg);}
 }
-.simple:hover ~ #Vector1 {
+.simple:hover  #Vector1 {
     animation: row 1s infinite;
 }
-.simple:hover ~ #Vector2 {
+.simple:hover #Vector2 {
     animation: row1 1s infinite;
 }
-.simple:hover ~ .rows {
+.simple:hover  .rows {
     animation: rows-rotate 1s both;
   
     transition: 2s;
 }
-.advanced:hover .ad2 {
+.adv:hover .ad2 {
     animation: ad1 1s infinite linear;
     fill: red;
 }
-.advanced:hover .ad1 {
+.adv:hover .ad1 {
     animation: ad2 1s infinite linear;
     fill: green;
     
@@ -137,12 +138,12 @@ img {
 }
 
 
-.portfolio:hover .port2 {
+.port_text:hover .port2 {
     animation: port2 1s linear both; 
 }
 
 
-.portfolio:hover .svg__port {
+.port_text:hover .svg__port {
     animation: port 5s infinite;
     animation-delay: 1s;
 }
@@ -187,17 +188,23 @@ img {
         rotate: -5deg;
     }
 }
-.mobile_box:hover .svg_mobile {
+.mobile_text:hover .svg_mobile {
     animation: mobile 1s linear infinite;
     animation-delay: 0.5s;
 }
-.mobile_box:hover .mobile_point {
+.mobile_text:hover .mobile_point {
     animation: point 0.5s linear infinite ;
     animation-direction: alternate-reverse;
 }
-.mobile_box:hover .mobile {
+.mobile_text:hover .mobile {
     animation: mobile 0.5s linear infinite;
 }
-.rows {
-    order: -1;
+.simple, .adv, .port_text, .mobile_text {
+    margin-top: 50px;
+    position: relative;
+}
+.rows, .svg_adv, .svg__port, .svg_mobile {
+    position: absolute;
+    top: -50px;
+    left: 0px
 }
