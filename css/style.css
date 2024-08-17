@@ -86,13 +86,13 @@ img {
 @keyframes rows-rotate {
     100% {transform: rotate(90deg);}
 }
-.simple_hover:hover #Vector1 {
+.simple:hover ~ #Vector1 {
     animation: row 1s infinite;
 }
-.simple_hover:hover #Vector2 {
+.simple:hover ~ #Vector2 {
     animation: row1 1s infinite;
 }
-.simple_hover:hover .rows {
+.simple:hover ~ .rows {
     animation: rows-rotate 1s both;
   
     transition: 2s;
@@ -197,4 +197,7 @@ img {
 }
 .mobile_box:hover .mobile {
     animation: mobile 0.5s linear infinite;
+}
+.rows {
+    order: -1;
 }
